@@ -1,0 +1,155 @@
+header {
+    height: 100px;
+    width: 100%;
+}
+
+header .logo {
+    margin-left: 40px;
+    margin-top: 35px;
+}
+
+header .logo a {
+    font-size: 28px;
+    color: black;
+}
+
+header .logo a:hover {
+    text-decoration: none;
+}
+
+header nav {
+    margin-top: 35px;
+    transform: translateX(80px);
+}
+
+header nav li {
+    margin-right: 20px;
+    transition: .2s;
+}
+
+header nav a {
+    transition: .2s;
+    color: black;
+    font-size: 20px;
+}
+
+header nav a:hover, nav li:hover {
+    background: rgba(87, 87, 87, 0.089);
+    color: black;
+}
+
+.slider a {
+    position: relative;
+    background: white;
+    color: #282828;
+    padding: 27px 100px;
+    border-radius: 30px;
+    z-index: 8;
+    transform: translateY(300px);
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 0px 16px 0px #bebebe;
+}
+
+.slider a:hover {
+    background: rgba(209, 209, 209, 0.274);
+    color: white;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+#slides {
+    position: relative;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 500px;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide {
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+    filter: blur(5px);
+}
+
+.slide:nth-of-type(1) {
+    background: url('../img/wall-1.jpg');
+    background-size: cover;
+}
+.slide:nth-of-type(2) {
+    background: url('../img/wall-2.jpg');
+    background-size: cover;
+}
+.slide:nth-of-type(3) {
+    background: url('../img/wall-3.jpg');
+    background-size: cover;
+}
+
+.pic {
+    position: absolute;
+}
+
+.pic-one {
+    z-index: 4;
+    transform: translate(-570px, 30px);
+}
+
+.pic-two {
+    transform: translate(-400px, 30px);
+}
+
+.pic-three {
+    transform: translate(500px, 370px);
+}
+
+.pic-four {
+    z-index: 5;
+    transform: translate(140px, 150px);
+}
+
+.pic-five {
+    z-index: 4;
+    transform: translate(200px, 300px);
+}
+
+footer {
+    transform: translateY(300px);
+    height: 100px;
+}
+
+footer li {
+    margin-left: 20px;
+}
+
+footer a {
+    color: black;
+    font-size: 20px;
+    transition: .2s;
+}
+
+footer a:hover {
+    background: #6e6e6e28;
+}
