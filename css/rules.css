@@ -1,0 +1,92 @@
+header {
+    height: 100px;
+    width: 100%;
+}
+
+header .logo {
+    margin-left: 40px;
+    margin-top: 35px;
+}
+
+header .logo a {
+    font-size: 28px;
+    color: black;
+    position: fixed;
+}
+
+header .logo a:hover {
+    text-decoration: none;
+}
+
+header nav {
+    margin-top: 35px;
+}
+
+header nav li {
+    margin-right: 20px;
+    transition: .2s;
+}
+
+header nav a {
+    transition: .2s;
+    color: black;
+    font-size: 20px;
+}
+
+header nav a:hover, nav li:hover {
+    background: rgba(87, 87, 87, 0.089);
+    color: black;
+}
+
+main {margin-top: 50px;}
+
+main .rule {margin-top: 100px;}
+
+main .rule .name-rule {
+  align-items: center;
+  border-radius: 30px;
+  animation: gradient-background 6s infinite;
+}
+
+@keyframes gradient-background {
+  0%, 100% {
+    background: #e66465;
+  }
+  50% {
+    background: #9198e5;
+  }
+}
+
+main .rule .name-rule h1 {
+  font-weight: 400;
+}
+
+main .rule .additions-rule {
+  margin-top: 75px;
+}
+
+main .navigation {
+  position: fixed;
+  text-align: center;
+}
+
+main .navigation li {
+  list-style: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+main .navigation li a {
+  background: #809fff;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  border-radius: 20px;
+  transition: all .2s;
+}
+
+main .navigation li a:hover {
+  background: #3366ff;
+  text-decoration: none;
+}
